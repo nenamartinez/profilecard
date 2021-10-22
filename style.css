@@ -1,0 +1,153 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  color: hsl(229, 23%, 23%);
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: white;
+  width: 90%;
+  min-width: 20rem;
+  max-width: 40rem;
+  margin: 18rem auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-top {
+  height: 14rem;
+  background-image: url(images/bg-pattern-card.svg);
+}
+
+.card-middle {
+  display: flex;
+  margin-top: -5rem;
+}
+
+.user_photo {
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name_age_location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+.name_and_age {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.age {
+  font-size: 2.2rem;
+  color: hsl(227, 10%, 46%);
+  margin-left: 1.5rem;
+}
+
+.location {
+  color: hsl(227, 10%, 46%);
+}
+
+.stat-row {
+  margin-top: 2.8rem;
+  padding: 2rem;
+  border-top: 1px solid hsla(0, 0%, 59%, 0.3);
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat_info {
+  font-size: 1.2rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 1.5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
